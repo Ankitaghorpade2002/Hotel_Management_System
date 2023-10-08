@@ -1,0 +1,304 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins' ,sans-serif;
+
+}
+h1,h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: o.5s;
+    cursor: pointer;
+}
+.primary-btn{
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    color: white;
+}
+.secondary-btn{
+    padding: 15px 40px;
+    background:none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+header{
+    height: 10vh;
+line-height: 10vh;
+padding: 0 20px;
+}
+header img{
+    margin: 20px 0;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a{
+    color: black;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    color: #7fc142;
+}
+header i{
+    margin: 0 20px;
+}
+header button{
+    padding: 13px 40px;
+}
+header .navlinks span{
+    display: none;
+}
+header h1{
+    color: cornflowerblue;
+    font-weight: bold;
+
+}
+@media only screen and (max-width:768px){
+    header ul{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #009f7f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+    }
+    header ul li{
+        display: block;
+    }
+    header li a{
+        color: white;
+    }
+    header i{
+        color: white;
+    }
+    header .navlinks span{
+        color: black;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+    }
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.home{
+    height: 100vh;
+    color: #fff;
+}
+.home img{
+    width: 100%;
+    height: 100vh;
+}
+.home .text{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.home .text h1{
+    font-size: 50px;
+    font-family: serif;
+    font-weight: 200;
+}
+.home p{
+    margin: 20px 0;
+}
+.home button{
+    margin-left: 20px;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next{
+    position: absolute;
+    top: 40%;
+    height: 30px;
+    width: 30px;
+    
+    color: #fff;
+}
+.owl-nav .owl-prev{
+    left: 0;
+}
+.owl-nav .owl-next{
+    right: 0;
+}
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.book{
+    padding: 40px 0;
+    background: #282834;
+    color: #fff;
+} 
+.text h1{
+    left: 1ppx;;
+}
+h1{
+    font-family: serif;
+}
+.book h1{
+    font-size: 28px;
+}
+.book h1 span{
+    color: #7fc142;
+}
+.book input{
+    padding: 20px;
+}
+.book input:nth-last-child(1){
+background: #7fc142;
+color: #fff;
+}
+.header li ul li{
+    position: absolute;
+    background: #009f7f;
+}
+.left,.right{
+    width: 50%;
+    padding: 30px;
+}
+.top{
+    margin-top: 80px;
+}
+.mtop{
+    margin-top: 40px;
+}
+.heading h1{
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+.heading h2{
+    margin: 30px 0;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+}
+ .about .heading h1{
+    top: 55px;
+ }
+ .about{
+    position: relative;
+ }
+ .about .left{
+margin-top: 30px;
+ }
+ .about p{
+    font-size: 15px;
+ }
+ .about button{
+    margin: 30px 0;
+ }
+ .counter{
+    /* background-image: url(assets/images/img7.jpg); */
+    background-color: #282834;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    color: #fff;
+ }
+ .counter .grid{
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 60px;
+ }
+ .counter h1{
+    font-size: 50px;
+ }
+ .counter hr{
+    width: 50%;
+    margin: 10px auto;
+    background: #7fc142;
+    height: 2px;
+    border: none;
+ }
+.rooms{
+    position: relative;
+}
+.rooms .text{
+    border: 1px solid rgba(252, 246, 246, 0.997);
+    border-top: none;
+    padding: 30px;
+}
+.rooms i{
+    font-size: 12px;
+    color: #fbb234;
+    margin: 15px 0;
+    margin-right: 5px;
+}
+.rooms p{
+    margin: 20px 0;
+    opacity: 0.7;
+}
+.rooms h3{
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #7fc142;
+}
+.rooms h3 span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}

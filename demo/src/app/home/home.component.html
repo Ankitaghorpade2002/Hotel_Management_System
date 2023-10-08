@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+          <div class="name">
+             <!-- <img src="assets/images/hotel logo.png" alt="">  -->
+             <h1><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+              <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"/>
+              <path d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"/>
+            </svg>  HOTEL MOUNTAIN</h1>
+             
+          </div>
+          <div class ="navlinks">
+             
+    <ul id="menulist">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a routerLink="/rooms">Rooms </a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/register">Register</a></li>
+        <li><button class="primary-btn">Book Now</button></li>
+    </ul>
+    <span class="fa fa-bars" onclick="menutoggle()"></span>
+</div>
+        </div>
+</header>
+<script>
+  var menulist=document.getElementById('menulist');
+  menulist.style.maxHeight="0px";
+
+  function menutoggle(){
+    if(menulist.style.maxHeight="0px"){
+      menulist.style.maxHeight="100vh";
+    }
+    else{
+      menulist.style.maxHeight="0px"
+    }
+  }
+</script>
+ <section class="home">
+  <div class="content">
+    <div class="owl-carousel owl-theme">
+      <div class="items">
+        <img src="assets/images/hotel img3.jpg" alt="" class="center">
+        <div class="text">
+          <h1>Spend Your Holidays</h1>
+          <div class="flex">
+            <button class="primary-btn">READ MORE</button>
+            <button class="secondary-btn">CONTACT US</button>
+          </div>         
+        </div>
+        </div>
+      </div>
+        <div class="items">
+          <img src="assets/images/hotel img.jpg" alt="" class="center">
+          <div class="text">
+            <h1>Spend Your Holidays</h1>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+        </div> 
+          </div>
+        </div>
+          <!-- <div class="items">
+            <img src="assets/images/hotel img2.jpg" alt="" class="center">
+            <div class="text">
+              <h1>Spend Your Holidays</h1>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT US</button>
+              </div> -->
+            <!-- </div> -->
+          <!-- </div>
+       </div> 
+     </div> 
+    </div>   -->
+   
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script>
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:true,
+  dots :false,
+  responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+</script> 
+ <section class="book">
+  <div class="container flex_space">
+    <div class="text">
+      <h1><span>Book </span> Your Rooms</h1>
+    </div>
+    <div class="form">
+      <form class="grid">
+        <input type="date" [(ngModel)]="guest.checkInDate" placeholder="Check In Date">
+        <input type="date" [(ngModel)]="guest.checkOutDate" placeholder="Check Out Date">
+        <input type="number" [(ngModel)]="guest.numberofadults" placeholder="Adults">
+        <input type="number" [(ngModel)]="guest.numberofchild" placeholder="Childerns">
+        <input type="submit" routerLink="/register" value="Check Availability">
+      </form>
+    </div>
+  </div>
+ </section>
+
+ <section class="about top">
+  <div class="container flex">
+    <div class="left">
+      <div class="heading">
+        <h1>WELCOME</h1>
+        <h2>Mountain Hotel</h2>
+      </div>
+      <p>Our Superior Rooms have all you need for a carefree stay: a bed to dream away in, an oasis of tranquility within reach. Explore the city extensively or enjoy a relaxing night in. The choice is up to you!</p>
+      <button class="primary-btn">ABOUT US</button>
+    </div>
+    <div class="right">
+    <img src="assets/images/img6.jpeg" alt="">
+  </div>
+</div>
+ </section>
+
+ <section class="counter top">
+  <div class="container grid">
+    <div class="box">
+      <h1>2500</h1>
+      <hr>
+      <span>Customer</span>
+    </div>
+    <div class="box">
+      <h1>1250</h1>
+      <hr>
+      <span>Happy Customer</span>
+    </div>
+    <div class="box">
+      <h1>150</h1>
+      <hr>
+      <span>Expert Technicians</span>
+    </div>
+    <div class="box">
+      <h1>3550</h1>
+      <hr>
+      <span>Desktop Reaired</span>
+    </div>
+  </div>
+ </section>
+
+ <!-- <section class="rooms">
+  <div class="container top">
+    <div class="heading">
+      <h1>EXPLORE</h1> 
+      <h2>Our Rooms</h2>
+    </div>
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="image">
+            <img src="assets/images/room1.jpeg" alt="">
+          </div>
+          <div class="text">
+            <h2>Superior Rooms</h2>
+            <div class="button flex">
+              <button class="primary-btn">BOOK NOW</button>
+              <h3>2,500 <span><br>Per Night</span></h3>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+ </section> -->
+ <script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots :false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin:10,
+        },
+        1000:{
+            items:3
+        }
+    }
+  })
+  </script> 
+</body>
+</html>
+<!-- <router-outlet></router-outlet> -->

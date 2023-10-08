@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <h1>Registration Form</h1>
+          <form>
+            <div>
+              <label for="guestName">Name:</label>
+              <input type="text" id="guestName" name="guestName" [(ngModel)]="guest.guestName" required>
+            </div>
+          
+            <div>
+              <label for="guestAge">Age:</label>
+              <input type="number" id="guestAge" name="guestAge" [(ngModel)]="guest.guestAge" required>
+            </div>
+          
+            <div>
+              <label for="guestContactNo">Contact No:</label>
+              <input type="tel" id="guestContactNo" name="guestContactNo" [(ngModel)]="guest.guestContactNo" required>
+            </div>
+          
+            <div>
+              <label for="guestEmailId">Email:</label>
+              <input type="email" id="guestEmailId" name="guestEmailId" [(ngModel)]="guest.guestEmailId" required>
+            </div>
+          
+            <div>
+              <label for="guestAddress">Address:</label>
+              <input type="text" id="guestAddress" name="guestAddress" [(ngModel)]="guest.guestAddress" required>
+            </div>
+            <div>
+              <label for="role">Role:</label>
+              <input type="text" id="role" name="role" [(ngModel)]="guest.role" required>
+            </div>
+
+            <div >
+              <label for="password">Password:</label>
+              <input type="password" id="guestpassword" name="guestpassword"  [(ngModel)]="guest.guestpassword" required>
+            </div>
+          
+            <div>
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword"  [(ngModel)]="confirmPassword" required>
+            </div>
+          
+            <div *ngIf="passwordMismatch" class="error-message">
+          
+              Password and confirm password do not match.
+          
+            </div>
+            <button type="submit" routerLink="/login" (click)="registerUser()">Register</button>
+          </form>
+          
+        </div>
+      </body>
+</body>
+</html>
